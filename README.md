@@ -34,7 +34,7 @@ A `Board` object represents the current chess board. When initialized, queens ar
 
 `Board::getBadCol()` returns the column value of a queen whose collision count is greater than 0. This column is then swapped with a different random column through `Board::swapIfGood(int col1, int col2)`. If the overall collision count is reduced, the swap is kept. However, if the overall collision count is increased, the swap is reversed (except for when `rand()%10000>1`, in order to prevent being stuck on a local maximum). This process is repeated until every value in `num_collisions` is 0, at which point the solution has been found.
 
-`n` v. solving time (i5-5200U 2.2 ghz processor)
+### `n` v. solving time (i5-5200U 2.2 ghz processor)
 
 `n`|seconds
 ---:|---
